@@ -1,0 +1,53 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .cta-button {
+      background: #FFC107;
+      color: black;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    section {
+      padding: 2rem;
+    }
+
+    #beneficios ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    #beneficios li {
+      background: #f4f4f4;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-left: 5px solid #007BFF;
+    }
+
+    blockquote {
+      background: #f4f4f4;
+      padding: 1rem;
+      border-left: 5px solid #007BFF;
+      margin: 1rem 0;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
