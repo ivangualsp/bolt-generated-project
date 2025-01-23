@@ -1,204 +1,53 @@
-:root {
-      --primary-color: #6a11cb;
-      --secondary-color: #2575fc;
-      --accent-color: #ff6b6b;
-      --text-color: #2c3e50;
-      --bg-light: #f8f9fa;
-      --transition-speed: 0.3s;
-    }
-
-    * {
+body {
+      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      color: var(--text-color);
       line-height: 1.6;
-      background: var(--bg-light);
     }
 
     header {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      background: #007BFF;
       color: white;
-      padding: 4rem 2rem;
+      padding: 2rem;
       text-align: center;
-      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-      margin-bottom: 2rem;
-    }
-
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
-      font-weight: 700;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 600px;
-      margin: 0 auto 2rem;
     }
 
     .cta-button {
-      background: var(--accent-color);
-      color: white;
-      padding: 0.8rem 2rem;
+      background: #FFC107;
+      color: black;
+      padding: 0.5rem 1rem;
       text-decoration: none;
-      border-radius: 25px;
+      border-radius: 5px;
       display: inline-block;
       margin-top: 1rem;
-      transition: transform var(--transition-speed) ease;
-    }
-
-    .cta-button:hover {
-      transform: translateY(-3px);
     }
 
     section {
-      padding: 4rem 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-
-    #beneficios {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 5px 30px rgba(0,0,0,0.1);
-      padding: 3rem;
-      margin: -6rem auto 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    #beneficios h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: var(--primary-color);
-    }
-
-    .beneficios-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .beneficio-card {
-      background: var(--bg-light);
       padding: 2rem;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform var(--transition-speed) ease;
     }
 
-    .beneficio-card:hover {
-      transform: translateY(-5px);
+    #beneficios ul {
+      list-style-type: none;
+      padding: 0;
     }
 
-    .beneficio-card h3 {
-      color: var(--secondary-color);
-      margin-bottom: 1rem;
-    }
-
-    #depoimentos {
-      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-      color: white;
-      clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-      padding: 6rem 2rem 8rem;
-      margin-top: 4rem;
-    }
-
-    .depoimento-card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 2rem;
-      border-radius: 10px;
-      max-width: 800px;
-      margin: 0 auto;
-      backdrop-filter: blur(10px);
+    #beneficios li {
+      background: #f4f4f4;
+      margin: 0.5rem 0;
+      padding: 0.5rem;
+      border-left: 5px solid #007BFF;
     }
 
     blockquote {
-      font-style: italic;
-      margin-bottom: 1rem;
-    }
-
-    cite {
-      display: block;
-      text-align: right;
-      font-weight: bold;
-    }
-
-    #inscricao {
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 5px 30px rgba(0,0,0,0.1);
-      padding: 3rem;
-      margin: -6rem auto 2rem;
-      position: relative;
-      z-index: 1;
-    }
-
-    #inscricao h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-      font-size: 2rem;
-      color: var(--primary-color);
-    }
-
-    #form-inscricao {
-      max-width: 500px;
-      margin: 0 auto;
-      display: grid;
-      gap: 1rem;
-    }
-
-    #form-inscricao input {
-      padding: 0.8rem;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    #form-inscricao button {
-      background: var(--accent-color);
-      color: white;
-      padding: 0.8rem;
-      border: none;
-      border-radius: 5px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background var(--transition-speed) ease;
-    }
-
-    #form-inscricao button:hover {
-      background: #ff4757;
+      background: #f4f4f4;
+      padding: 1rem;
+      border-left: 5px solid #007BFF;
+      margin: 1rem 0;
     }
 
     footer {
-      background: var(--text-color);
+      background: #333;
       color: white;
       text-align: center;
-      padding: 2rem;
-      margin-top: 4rem;
-    }
-
-    @media (max-width: 768px) {
-      header {
-        padding: 3rem 1rem;
-      }
-
-      section {
-        padding: 2rem 1rem;
-      }
-
-      #beneficios, #inscricao {
-        margin: -4rem auto 2rem;
-        padding: 2rem;
-      }
-
-      .beneficios-grid {
-        grid-template-columns: 1fr;
-      }
+      padding: 1rem;
     }
